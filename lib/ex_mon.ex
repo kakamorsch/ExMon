@@ -30,6 +30,7 @@ defmodule ExMon do
 
     computer_move(Game.info())
   end
+
   def do_move({:error, move}), do: Status.print_wrong_move_message(move)
 
   def do_move({:ok, move}) do
